@@ -38,9 +38,13 @@ body {
   padding: 0 30px 30px;
 }
 
-.card img {
-  width: 185px;
-  height: 185px;
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 main h4 {
@@ -92,7 +96,7 @@ main {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -234,5 +238,13 @@ footer ul {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
